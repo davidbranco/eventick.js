@@ -2,7 +2,7 @@
   "name": "eventick.js",
   "version": "1.0.0",
   "description": "JavaScript wrapper around Eventick's API.",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "mocha --reporter nyan"
   },
