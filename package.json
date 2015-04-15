@@ -1,0 +1,32 @@
+{
+  "name": "eventick.js",
+  "version": "1.0.0",
+  "description": "JavaScript wrapper around Eventick's API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jugoncalves/eventick.js"
+  },
+  "keywords": [
+    "events",
+    "eventick",
+    "api"
+  ],
+  "author": "Ju Gonçalves <code@jugoncalv.es>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jugoncalves/eventick.js/issues"
+  },
+  "homepage": "https://github.com/jugoncalves/eventick.js",
+  "dependencies": {
+    "ramda": "^0.13.0",
+    "superbird": "^1.0.3"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.4"
+  }
+}
