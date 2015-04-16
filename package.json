@@ -1,6 +1,6 @@
 {
   "name": "eventick.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "JavaScript wrapper around Eventick's API.",
   "main": "./src/index.js",
   "scripts": {
