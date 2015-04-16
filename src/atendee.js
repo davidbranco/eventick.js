@@ -1,5 +1,5 @@
-var R              = require('ramda')
-  , Request        = require('superbird')
+var R              = require('../vendor/ramda')
+  , Request        = require('kakuna')
 
 var attendeesEndpoint = R.curry(function(endpoint, event, param){
   return param ? 

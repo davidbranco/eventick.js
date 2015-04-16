@@ -4,7 +4,9 @@
   "description": "JavaScript wrapper around Eventick's API.",
   "main": "./src/index.js",
   "scripts": {
-    "test": "mocha --reporter nyan"
+    "test": "mocha --reporter nyan",
+    "js": "./node_modules/.bin/browserify index.js -o dist/eventick.js -s Eventick",
+    "min": "./node_modules/.bin/uglifyjs dist/eventick.js -o dist/eventick.min.js"
   },
   "repository": {
     "type": "git",
@@ -22,11 +24,13 @@
   },
   "homepage": "https://github.com/jugoncalves/eventick.js",
   "dependencies": {
-    "ramda": "^0.13.0",
-    "superbird": "^1.0.3"
+    "kakuna": "^1.0.1",
+    "ramda": "^0.13.0"
   },
   "devDependencies": {
     "chai": "^2.2.0",
-    "mocha": "^2.2.4"
+    "mocha": "^2.2.4",
+    "browserify": "^9.0.3",
+    "uglify-js": "^2.4.16"
   }
 }

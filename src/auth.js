@@ -1,5 +1,5 @@
-var R         = require('ramda')
-  , Request   = require('superbird')
+var R         = require('../vendor/ramda')
+  , Request   = require('kakuna')
   , endpoint  = require('./url')
   , event     = require('./event')
   , atendee   = require('./atendee')
