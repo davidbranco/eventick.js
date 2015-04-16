@@ -11,7 +11,6 @@ var login = R.curry(function(user, password){
     .auth(user, password)
     .end()
     .then(getLoggedApi, Oops)
-    .catch(Oops)
 })
 
 var genApi = function(token){
@@ -21,11 +20,15 @@ var genApi = function(token){
 }
 
 var getLoggedApi = function(response){
-  return R.compose(atendee, event, genApi, R.path(['body', 'token']))(response)
+  return R.compose(atendee, event, genApi, R.path(['body', 'token']), checkForErrors)(response)
 }
 
-var Oops = function(e){
-  console.log(e)
+var checkForErrors = function(res){
+  return res.ok ? res : Oops()
+}
+
+var Oops = function(){
+  throw new Error('Not able to login.')
 }
 
 module.exports = {
