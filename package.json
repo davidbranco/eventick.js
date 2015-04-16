@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "test": "mocha --reporter nyan",
-    "js": "./node_modules/.bin/browserify index.js -o dist/eventick.js -s Eventick",
+    "js": "./node_modules/.bin/browserify src/index.js -o dist/eventick.js -s Eventick",
     "min": "./node_modules/.bin/uglifyjs dist/eventick.js -o dist/eventick.min.js"
   },
   "repository": {
